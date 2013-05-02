@@ -6,12 +6,12 @@ from shogun.Distance import EuclideanDistance
 
 # Load the data.
 f = open(os.path.dirname(__file__) + '../data/two_cluster.data')
-trainData = np.fromfile(f, dtype=np.float64, sep=' ')
-trainData = trainData.reshape(-1, 2)
+data = np.fromfile(f, dtype=np.float64, sep=' ')
+data = data.reshape(-1, 2)
 f.close()
 
 # Perform kmean with 2 clusters.
-feat = RealFeatures(trainData.T)
+feat = RealFeatures(data.T)
 distance = EuclideanDistance(feat, feat)
 kmeans = KMeans(2, distance)
 kmeans.train()
