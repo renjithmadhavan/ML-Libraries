@@ -1,5 +1,5 @@
 % Load the data.
-Data = dlmread('../data/new_circle.txt');
+Data = dlmread('../data/circle_data.txt');
 
 % Show data.
 figure(1);
