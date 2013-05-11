@@ -1,4 +1,4 @@
-@relation two_cluster
+@relation ingredients
 
 @attribute w numeric
 @attribute x numeric
