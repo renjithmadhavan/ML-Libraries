@@ -1,7 +1,7 @@
 from subprocess import Popen, PIPE, STDOUT
 
 # Settings to perform Naive Bayes classifier.
-classpath = '/Applications/weka-3-6-9/weka.jar'
+classpath = '~/weka-3-6-9/weka.jar'
 evaluationClass = 'weka.classifiers.bayes.NaiveBayes'
 trainFile = '../data/fisheriris.arff'
 testFile = '../data/fisheriris.arff'
