@@ -1,0 +1,9 @@
+@relation query_data
+
+@attribute W numeric
+@attribute x numeric
+
+@data
+5,1.45
+6,2
+2.75,0.75
