@@ -6,3 +6,4 @@ Collection of various machine learning libraries.
 + http://shogun-toolbox.org
 + http://cs.waikato.ac.nz/ml/weka/
 + http://scikit-learn.org
++ http://mlpy.sourceforge.net
