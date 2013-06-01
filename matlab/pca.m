@@ -4,7 +4,7 @@ data = csvread('../data/ingredients.csv');
 % mean feature vector
 dataMean = mean(data);
 
-% compute the covariance matrix
+% Subtract off the mean for each dimension.
 dataMean = bsxfun(@minus, data, dataMean);
 dataCov = dataMean'*dataMean/size(data, 1);
 
@@ -12,4 +12,4 @@ dataCov = dataMean'*dataMean/size(data, 1);
 [U,S,V] = svd(dataCov);
 
 % Show transform data into eigenvector basis.
-transformedData = (dataMean*U)'
+transformedData = (dataMean*U)
